@@ -203,7 +203,7 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
 
 /* ── CONTACT ── */
 #contact{padding:110px 0;position:relative;z-index:1}
-.contact-g{display:grid;grid-template-columns:400px 1fr;gap:80px;align-items:start}
+.contact-g{max-width:640px}
 .c-lead{font-size:.97rem;color:var(--mid);line-height:1.8;margin-bottom:36px}
 .c-items{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .c-item{display:flex;align-items:center;gap:14px;padding:16px 18px;background:var(--navy2);border:1px solid rgba(255,255,255,.05);border-radius:6px;text-decoration:none;transition:all .2s}
@@ -212,19 +212,6 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
 .c-ico svg{width:17px;height:17px}
 .c-lbl{font-size:.62rem;color:var(--mid);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:2px;font-family:'DM Mono',monospace}
 .c-val{font-size:.84rem;color:var(--white);font-weight:400;line-height:1.3}
-.c-form{background:var(--navy2);border:1px solid rgba(255,255,255,.05);border-radius:10px;padding:36px;position:relative;overflow:hidden}
-.c-form::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),rgba(201,168,76,.2),transparent)}
-.c-form-title{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--white);margin-bottom:6px}
-.c-form-sub{font-size:.84rem;color:var(--mid);margin-bottom:28px;line-height:1.5}
-.f-group{margin-bottom:16px}
-.f-label{font-size:.65rem;color:var(--mid);letter-spacing:1.5px;text-transform:uppercase;font-family:'DM Mono',monospace;margin-bottom:6px;display:block}
-.f-input,.f-ta{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:11px 14px;font-family:'Outfit',sans-serif;font-size:.87rem;color:var(--white);outline:none;transition:border-color .2s;resize:none}
-.f-input::placeholder,.f-ta::placeholder{color:var(--dim)}
-.f-input:focus,.f-ta:focus{border-color:rgba(201,168,76,.35)}
-.f-ta{height:110px}
-.f-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.f-btn{width:100%;background:var(--gold);color:var(--navy);border:none;padding:13px;border-radius:4px;font-family:'Outfit',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all .2s;margin-top:6px}
-.f-btn:hover{background:var(--gold2);transform:translateY(-1px);box-shadow:0 6px 20px rgba(201,168,76,.2)}
 
 /* ── Footer ── */
 .footer{padding:44px 64px;border-top:1px solid rgba(255,255,255,.04);display:flex;align-items:center;justify-content:space-between;max-width:var(--page);margin:0 auto}
@@ -248,10 +235,9 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
   .n-links{display:none}
   #hero,.wrap{padding-left:24px;padding-right:24px}
   #hero{padding-top:100px;padding-bottom:60px}
-  .hero-g,.about-g,.exp-grid,.skills-g,.contact-g{grid-template-columns:1fr}
+  .hero-g,.about-g,.exp-grid,.skills-g{grid-template-columns:1fr}
   .h-card{display:none}
   .sc-hint{left:24px}
-  .f-row{grid-template-columns:1fr}
   .c-items{grid-template-columns:1fr}
   .footer{flex-direction:column;gap:16px;text-align:center;padding:32px 24px}
   .f-right{align-items:center}
@@ -273,7 +259,7 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
 
 <!-- ══ NAV ══ -->
 <nav id="nav">
-  <a href="#" class="n-logo">G<b>.</b>Dhami</a>
+  <a href="#" class="n-logo">G<b>.</b>D</a>
   <ul class="n-links">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -295,7 +281,7 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
     <div>
       <p class="h-sub">01 — Introduction</p>
       <h1 class="h-name">Girdhar<em>Dhami.</em></h1>
-      <p class="h-tag"><strong>IT Diploma Student</strong> from Lalkuan, Uttarakhand — building real-world projects with <em>IoT</em>, <em>Web Dev</em>, and <em>AI-assisted engineering</em>. Fresher actively seeking internship opportunities.</p>
+      <p class="h-tag"><strong>IT Diploma Student</strong> building real-world projects with <em>IoT</em>, <em>Web Dev</em>, and <em>AI-assisted engineering</em>. Fresher actively seeking internship opportunities.</p>
       <div class="h-btns">
         <a href="#projects" class="btn-p">View Projects</a>
         <a href="#experience" class="btn-o">Experience</a>
@@ -309,7 +295,7 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
     </div>
     <div class="h-card">
       <p class="h-card-label">Quick Profile</p>
-      <div class="h-stat"><div class="stat-n">V</div><div><div class="stat-t">Current Semester</div><div class="stat-s">Diploma in IT · GPN Nainital</div></div></div>
+      <div class="h-stat"><div class="stat-n">V</div><div><div class="stat-t">Current Semester</div><div class="stat-s">Diploma in IT · UGIP Nainital</div></div></div>
       <div class="h-stat"><div class="stat-n">2</div><div><div class="stat-t">Solo Projects</div><div class="stat-s">IoT Automation + Web CMS</div></div></div>
       <div class="h-stat"><div class="stat-n">1</div><div><div class="stat-t">Industrial Training</div><div class="stat-s">Web Dev · Tamizhan Skills</div></div></div>
       <div class="h-stat"><div class="stat-n">∞</div><div><div class="stat-t">AI-Powered Builds</div><div class="stat-s">Prompt → Working Product</div></div></div>
@@ -330,16 +316,15 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
       <div class="about-body reveal-l">
         <p class="eyebrow">02 — About Me</p>
         <h2 class="sec-h">Building with curiosity<br>and <i>AI tools.</i></h2>
-        <p>I'm <strong>Girdhar Dhami</strong>, a Diploma student in IT at Government Institute of Polytechnic, Nainital currently in my <strong>V Semester</strong>. I'm from <strong>Lalkuan, Uttarakhand</strong> and I'm actively looking for my first IT internship.</p>
+        <p>I'm <strong>Girdhar Dhami</strong>, a Diploma student in IT at Uttarakhand Government Institute of Polytechnic, Nainital currently in my <strong>V Semester</strong>. I'm actively looking for my first IT internship.</p>
         <p>My approach is honest — I have <em>basic-level programming knowledge</em> in C, C++, Python, and PHP, but I leverage <strong>AI tools and prompting effectively</strong> to build projects that go well beyond what I could write from scratch. I understand concepts, can plan systems, and have shipped real working things.</p>
         <p>I completed my <strong>industrial training at Tamizhan Skills</strong> as part of the RISE Program in March 2026 — working on web development in a real professional environment.</p>
         <div class="about-hl">"The best code is the code that solves real problems — regardless of how it got written."</div>
       </div>
       <div class="reveal">
         <div class="detail-card">
-          <div class="detail-row"><div class="d-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div><div class="d-lbl">Institution</div><div class="d-val">Govt. Institute of Polytechnic, Nainital</div></div></div>
+          <div class="detail-row"><div class="d-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div><div class="d-lbl">Institution</div><div class="d-val">Uttarakhand Government Institute of Polytechnic, Nainital</div></div></div>
           <div class="detail-row"><div class="d-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><div><div class="d-lbl">Program</div><div class="d-val">Diploma in Information Technology · V Semester</div></div></div>
-          <div class="detail-row"><div class="d-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="d-lbl">Location</div><div class="d-val">Bindukhatta, Indra Nagar 1st, Lalkuan</div></div></div>
           <div class="detail-row"><div class="d-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="d-lbl">Status</div><div class="d-val">Fresher — Actively Seeking IT Internship</div></div></div>
           <div class="detail-row"><div class="d-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><div><div class="d-lbl">Interests</div><div class="d-val">AI · IoT · Web Dev · Embedded Systems · Game Dev</div></div></div>
           <div class="detail-row"><div class="d-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><div class="d-lbl">Languages</div><div class="d-val">Hindi (Native) · English (Proficient)</div></div></div>
@@ -368,15 +353,15 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
         </div>
         <div class="exp-item">
           <div class="exp-dot dim"></div>
-          <div class="exp-period">2024 – Present</div>
+          <div class="exp-period">2024</div>
           <div class="exp-role">Smart Classroom Project</div>
-          <div class="exp-org">GPN Nainital · Main Academic Project</div>
+          <div class="exp-org">UGIP Nainital · Main Academic Project</div>
         </div>
         <div class="exp-item">
           <div class="exp-dot dim"></div>
           <div class="exp-period">2024</div>
           <div class="exp-role">College CMS Development</div>
-          <div class="exp-org">GPN Nainital · Academic Project</div>
+          <div class="exp-org">UGIP Nainital · Academic Project</div>
         </div>
         <div class="exp-item">
           <div class="exp-dot dim"></div>
@@ -407,17 +392,19 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
         </div>
         <div class="intern-desc">
           <p>Completed industrial training as part of the <strong>RISE Program</strong> at Tamizhan Skills, focusing on real-world web development practices in a professional environment.</p>
-          <p>Worked on <strong>frontend and backend web development</strong> tasks, gaining hands-on experience with building and maintaining web applications. Applied AI-assisted development techniques alongside fundamental web technologies.</p>
-          <p>This training provided valuable exposure to professional workflows, team collaboration, and industry-standard development practices beyond the academic environment.</p>
+          <p>Built <strong>PULSERIG</strong>, a fully functional e-commerce storefront for premium PC hardware — featuring a dynamic product catalog with category filtering, a slide-out cart drawer with live free-shipping progress tracking, a detailed product modal, and toast notifications, all driven by vanilla JavaScript managing the full UI state.</p>
+          <p>Applied AI-assisted development to architect the cart logic, animations, and responsive layout — gaining hands-on experience with professional frontend workflows beyond the academic environment.</p>
         </div>
         <div class="intern-tags">
-          <span class="i-tag">HTML & CSS</span>
-          <span class="i-tag">PHP</span>
-          <span class="i-tag">Bootstrap 5</span>
-          <span class="i-tag">MySQL</span>
-          <span class="i-tag">Web Development</span>
+          <span class="i-tag">HTML5</span>
+          <span class="i-tag">Tailwind CSS</span>
+          <span class="i-tag">JavaScript</span>
+          <span class="i-tag">E-Commerce UI</span>
           <span class="i-tag">AI Tools</span>
           <span class="i-tag">Professional Training</span>
+        </div>
+        <div class="proj-links" style="margin-top:20px">
+          <a href="https://github.com/onebotyt/E-commerce" target="_blank" class="pl gh"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>View on GitHub</a>
         </div>
       </div>
     </div>
@@ -479,13 +466,13 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
           <div class="proj-info">
             <div class="proj-stacks"><span class="stk">PHP</span><span class="stk">MySQL</span><span class="stk">Bootstrap 5</span><span class="stk">AI Assisted</span></div>
             <div class="proj-title">College Website CMS</div>
-            <div class="proj-short">Dynamic content management system for Government Polytechnic Nainital with full admin panel.</div>
+            <div class="proj-short">Dynamic content management system for Uttarakhand Government Institute of Polytechnic, Nainital with full admin panel.</div>
           </div>
           <div class="proj-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
         </div>
         <div class="proj-body">
           <ul class="proj-buls">
-            <li>Developed a dynamic CMS for Government Polytechnic Nainital with admin panel, notice board, and events management.</li>
+            <li>Developed a dynamic CMS for Uttarakhand Government Institute of Polytechnic, Nainital with admin panel, notice board, and events management.</li>
             <li>Built fully responsive UI with Bootstrap 5 and integrated MySQL database for persistent data storage.</li>
             <li>Leveraged AI-assisted development to architect and implement backend features and database schema.</li>
           </ul>
@@ -539,19 +526,6 @@ nav.sc{background:rgba(10,22,40,.88);backdrop-filter:blur(24px);padding:14px 64p
           <a href="https://instagram.com/onebot_yt" target="_blank" class="c-item reveal"><div class="c-ico" style="background:rgba(225,48,108,.1)"><svg viewBox="0 0 24 24" fill="url(#ig2)"><defs><linearGradient id="ig2" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="50%" stop-color="#dc2743"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div><div><div class="c-lbl">Instagram</div><div class="c-val">instagram.com/onebot_yt</div></div></a>
         </div>
       </div>
-
-      <!-- Contact form -->
-      <div class="c-form reveal">
-        <div class="c-form-title">Send a Message</div>
-        <div class="c-form-sub">Have an opportunity or want to collaborate? Drop me a message and I'll get back to you.</div>
-        <div class="f-row">
-          <div class="f-group"><label class="f-label">Name</label><input class="f-input" type="text" id="f-name" placeholder="Your name"></div>
-          <div class="f-group"><label class="f-label">Email</label><input class="f-input" type="email" id="f-email" placeholder="your@email.com"></div>
-        </div>
-        <div class="f-group"><label class="f-label">Subject</label><input class="f-input" type="text" id="f-subject" placeholder="Internship Opportunity / Collaboration"></div>
-        <div class="f-group"><label class="f-label">Message</label><textarea class="f-ta" id="f-message" placeholder="Tell me about the opportunity or what you'd like to discuss..."></textarea></div>
-        <button class="f-btn" onclick="sendMsg()">Send Message →</button>
-      </div>
     </div>
   </div>
 </section>
@@ -596,33 +570,6 @@ document.querySelectorAll('.reveal,.reveal-l').forEach(el=>obs.observe(el));
 
 // Project accordion
 function tog(el){const o=el.classList.contains('open');document.querySelectorAll('.proj-item').forEach(p=>p.classList.remove('open'));if(!o)el.classList.add('open')}
-
-// Contact form
-function sendMsg(){
-  const name=document.getElementById('f-name').value.trim();
-  const email=document.getElementById('f-email').value.trim();
-  const subject=document.getElementById('f-subject').value.trim();
-  const message=document.getElementById('f-message').value.trim();
-
-  if(!name||!email||!message){
-    const btn=document.querySelector('.f-btn');
-    const orig=btn.textContent;
-    btn.textContent='Please fill in name, email & message';
-    btn.style.background='var(--red)';
-    setTimeout(()=>{btn.textContent=orig;btn.style.background=''},2500);
-    return;
-  }
-
-  const mailSubject=subject||`Portfolio Contact from ${name}`;
-  const body=`Name: ${name}\nEmail: ${email}\n\n${message}`;
-  const mailtoLink=`mailto:gdhami115@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(body)}`;
-  window.location.href=mailtoLink;
-
-  const btn=document.querySelector('.f-btn');
-  btn.textContent='✓ Opening your email app...';
-  btn.style.background='var(--green)';
-  setTimeout(()=>{btn.textContent='Send Message →';btn.style.background=''},3000);
-}
 </script>
 </body>
 </html>
