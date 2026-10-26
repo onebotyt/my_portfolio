@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Girdhar Dhami — IT Student · Builder of Real Systems</title>
+<meta name="description" content="Portfolio of Girdhar Dhami: IoT, full-stack web, Flutter and AI projects. Diploma in IT, seeking an internship.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23ff3d71'/%3E%3Cpath d='M56 14 24 56h22l-4 30 34-44H52z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffaf0;--bg2:#fff1d6;--card:#ffffff;--line:#1a1a2e;--tx:#1a1a2e;--mu:#4b4b6b;--ac:#ff3d71;--ac2:#6c4bff;--ac3:#00b8ff;--ac4:#ffc400;--r:18px}
+:root[data-theme=dark]{--bg:#14102b;--bg2:#1d1840;--card:#1f1a44;--line:#4a3fa0;--tx:#fff;--mu:#c9c4f0;--ac:#ff5c8a;--ac2:#9b84ff;--ac3:#33d1ff;--ac4:#ffd84d}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:16px/1.6 'Space Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 420px at 90% -5%,color-mix(in srgb,var(--ac3) 40%,transparent),transparent),radial-gradient(520px 420px at 0 25%,color-mix(in srgb,var(--ac4) 40%,transparent),transparent),radial-gradient(500px 400px at 60% 70%,color-mix(in srgb,var(--ac) 18%,transparent),transparent)}
+a{color:inherit;text-decoration:none}.mono{font-family:'JetBrains Mono',monospace}
+.wrap{max-width:1080px;margin:auto;padding:0 20px}section{padding:72px 0}
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700}.logo b{color:var(--ac)}.lk a{border-bottom:2px solid var(--ac)}
+.links{display:flex;gap:22px;font-size:14px;color:var(--mu)}.links a:hover{color:var(--tx)}
+.tbtn{background:var(--card);border:1px solid var(--line);color:var(--tx);border-radius:10px;padding:6px 10px;cursor:pointer;font-size:15px}
+.hero{padding:90px 0 40px}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:99px;font-size:13px;color:var(--mu)}
+.dot{width:8px;height:8px;border-radius:50%;background:#16d46b;box-shadow:0 0 0 0 #16d46b;animation:p 2s infinite}
+@keyframes p{70%{box-shadow:0 0 0 9px transparent}}
+h1{font-size:clamp(40px,8vw,84px);line-height:1.02;letter-spacing:-.04em;margin:22px 0}
+h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2) 55%,var(--ac3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:620px;color:var(--mu);font-size:18px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{padding:12px 22px;border-radius:12px;font-weight:500;border:1px solid var(--line);background:var(--card);transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--ac)}
+.btn.p{background:var(--ac);color:#fff;border-color:var(--tx);box-shadow:4px 4px 0 var(--tx)}.btn{border:2px solid var(--tx)}.btn:hover{box-shadow:4px 4px 0 var(--ac2)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:56px}
+.stat:nth-child(1){background:var(--ac4)}.stat:nth-child(2){background:var(--ac3)}.stat:nth-child(3){background:var(--ac)}.stat:nth-child(4){background:var(--ac2)}.stat b,.stat span{color:#1a1a2e!important}.stat{border:2px solid var(--tx);color:#1a1a2e;background:var(--card);border-width:2px;border-style:solid;border-color:var(--tx)}.stat0{border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.stat b{font-size:30px;display:block}.stat span{font-size:13px;color:var(--mu)}
+.eyebrow{color:var(--ac);font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(28px,5vw,44px);letter-spacing:-.03em;margin:8px 0 32px}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:28px}
+.about p{color:var(--mu);margin-bottom:14px}.about p b{color:var(--tx);font-weight:500}
+.kv{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:8px 20px}
+.kv div{display:flex;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
+.kv div:last-child{border:0}.kv span{color:var(--mu)}.kv b{font-weight:500;text-align:right}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:12px 'JetBrains Mono',monospace;padding:4px 10px;border-radius:99px;border:1.5px solid var(--tx);color:var(--tx);background:color-mix(in srgb,var(--ac4) 55%,var(--card))}.chip:nth-child(3n+2){background:color-mix(in srgb,var(--ac3) 45%,var(--card))}.chip:nth-child(3n){background:color-mix(in srgb,var(--ac) 35%,var(--card))}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.f{cursor:pointer;font:inherit;font-size:14px;padding:7px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--mu)}
+.f.on{background:var(--ac2);color:#fff;border-color:var(--tx)}.f{border:2px solid var(--tx)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:12px;transition:.25s;position:relative;overflow:hidden}
+.card{border:2px solid var(--tx);box-shadow:5px 5px 0 var(--ac2)}.card:hover{transform:translate(-2px,-4px);box-shadow:8px 9px 0 var(--ac)}.card:nth-child(3n+2){box-shadow:5px 5px 0 var(--ac3)}.card:nth-child(3n){box-shadow:5px 5px 0 var(--ac4)}
+.card.big{grid-column:1/-1;background:linear-gradient(135deg,color-mix(in srgb,var(--ac4) 45%,var(--card)),color-mix(in srgb,var(--ac3) 35%,var(--card)))}
+.card h3{font-size:21px;letter-spacing:-.02em}.card p{color:var(--mu);font-size:15px;flex:1}
+.tag{font-size:12px;font-weight:700;color:var(--ac)}
+.lk{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;font-weight:500}.lk a{border-bottom:1px solid var(--ac)}.lk a:hover{color:var(--ac)}
+.tl{border-left:2px solid var(--line);padding-left:26px;display:grid;gap:26px}
+.tl>div{position:relative}.tl>div:before{content:"";position:absolute;left:-35px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--ac4);border:3px solid var(--tx)}
+.tl small{color:var(--mu)}.tl h3{font-size:19px}.tl p{color:var(--mu);font-size:15px;margin-top:4px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.skills .card{gap:14px}.skills h3{font-size:15px;color:var(--mu);font-weight:500}
+.cta{text-align:center;background:linear-gradient(135deg,var(--ac4),var(--ac) 50%,var(--ac2));color:#1a1a2e;border:2px solid var(--tx);border-radius:28px;padding:56px 20px}
+.cta .lead{margin:0 auto;color:#1a1a2e}.cta .eyebrow{color:#1a1a2e}.cta .btn{color:#1a1a2e;background:#fff}.cta .btn.p{background:#1a1a2e;color:#fff}.cta .btns{justify-content:center}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:36px 0}
+.rv{opacity:0;transform:translateY(22px);transition:.7s}.rv.in{opacity:1;transform:none}
+.hide{display:none}
+@media(max-width:760px){.links{display:none}.stats{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}section{padding:52px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--ac4),var(--ac),var(--ac2),var(--ac3));z-index:50}
+@keyframes p2{50%{opacity:.25}}
+.nr{display:flex;gap:10px;align-items:center}
+.pill.open{background:#16d46b;color:#06220f;font-weight:700;border:2px solid var(--tx);box-shadow:3px 3px 0 var(--tx)}
+.role{display:inline-block;min-height:1.1em}.role:after{content:"|";margin-left:2px;animation:p2 1s infinite;color:var(--ac)}
+.mq{overflow:hidden;border-block:2px solid var(--tx);background:var(--ac4);color:#1a1a2e;padding:12px 0;margin-top:40px;transform:rotate(-1deg)}
+.mq div{display:flex;gap:42px;width:max-content;animation:mq 28s linear infinite;font:700 15px 'JetBrains Mono',monospace;white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+.work{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.work .card h3{font-size:18px}.work .ico{font-size:30px}
+.card .ico{font-size:28px}
+
+.si{width:1.05em;height:1.05em;vertical-align:-.15em;margin-right:8px;color:var(--ac2)}.card h3 .si{width:1.1em;height:1.1em}
+.ico .si{width:34px;height:34px;margin:0;color:var(--ac)}.tbtn .si{margin:0;vertical-align:middle;color:var(--tx)}
+.mqd{width:10px;height:10px;border-radius:50%;background:#1a1a2e;align-self:center}
+a.pill.open{cursor:pointer}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav><div class="wrap">
+  <a href="#" class="logo">girdhar<b>.</b>dev</a>
+  <div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#work">Looking for</a><a href="#contact">Contact</a></div>
+  <div class="nr"><button class="tbtn" id="t" aria-label="Toggle theme"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg></button></div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <a class="pill open mono" href="https://mail.google.com/mail/?view=cm&fs=1&to=gdhami115@gmail.com&su=Opportunity%20for%20Girdhar&body=Hi%20Girdhar%2C%0A%0A" target="_blank" rel="noopener"><i class="dot"></i>Open for work</a>
+  <h1>Hi, I’m Girdhar.<br><span>I build <em class="role" id="role" style="font-style:normal"></em></span></h1>
+  <p class="lead">Diploma IT student from Uttarakhand shipping IoT hardware, full-stack campus software, cross-platform apps and ML dashboards, with AI as my co-pilot and a plan for every system.</p>
+  <div class="btns"><a class="btn p" href="#projects">See my work</a><a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=gdhami115@gmail.com&su=Opportunity%20for%20Girdhar&body=Hi%20Girdhar%2C%0A%0A" target="_blank" rel="noopener">Open for work</a><a class="btn" href="https://github.com/onebotyt" target="_blank" rel="noopener">GitHub</a></div>
+  <div class="stats">
+    <div class="stat"><b data-n="6">0</b><span>Projects</span></div>
+    <div class="stat"><b data-n="2">0</b><span>RISE internships</span></div>
+    <div class="stat"><b data-n="4">0</b><span>Live demos</span></div>
+    <div class="stat"><b>2027</b><span>Passing year, Dip. IT</span></div>
+  </div>
+</div>
+<div class="mq"><div><span>ESP32</span><span class="mqd"></span><span>FLUTTER</span><span class="mqd"></span><span>NODE.JS</span><span class="mqd"></span><span>MYSQL</span><span class="mqd"></span><span>PYTHON</span><span class="mqd"></span><span>WEBSOCKET</span><span class="mqd"></span><span>DOCKER</span><span class="mqd"></span><span>IOT</span><span class="mqd"></span><span>MACHINE LEARNING</span><span class="mqd"></span><span>JAVASCRIPT</span><span class="mqd"></span><span>ESP32</span><span class="mqd"></span><span>FLUTTER</span><span class="mqd"></span><span>NODE.JS</span><span class="mqd"></span><span>MYSQL</span><span class="mqd"></span><span>PYTHON</span><span class="mqd"></span><span>WEBSOCKET</span><span class="mqd"></span><span>DOCKER</span><span class="mqd"></span><span>IOT</span><span class="mqd"></span><span>MACHINE LEARNING</span><span class="mqd"></span><span>JAVASCRIPT</span><span class="mqd"></span></div></div></header>
+
+<section id="about"><div class="wrap rv">
+  <p class="eyebrow mono">// about</p><h2>Curious first, tools second.</h2>
+  <div class="about">
+    <div>
+      <p>I’m a <b>Diploma in Information Technology</b> student at Government Polytechnic Nainital, now in my sixth semester, based in Uttarakhand.</p>
+      <p>My honest stack: <b>basic C, C++, Python and PHP</b>, with prior Laravel experience, plus strong prompting skills. I plan the architecture, understand how the pieces fit, and use AI tools to build things well beyond what I could type from scratch, and they ship.</p>
+      <p>My goal is to move from syntax-level knowledge to designing and building production-grade systems.</p>
+    </div>
+    <div class="kv">
+      <div><span>College</span><b>Govt. Polytechnic Nainital</b></div>
+      <div><span>Program</span><b>Diploma in IT · Sem VI</b></div>
+      <div><span>Location</span><b>Uttarakhand, India</b></div>
+      <div><span>Languages</span><b>Hindi · English</b></div>
+      <div><span>Interests</span><b>IoT · Full-stack · AI</b></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap rv">
+  <p class="eyebrow mono">// projects</p><h2>Things I’ve built.</h2>
+  <div class="filters" id="fl">
+    <button class="f on" data-f="all">All</button><button class="f" data-f="web">Web</button><button class="f" data-f="iot">IoT</button><button class="f" data-f="app">Apps</button><button class="f" data-f="ai">AI / ML</button>
+  </div>
+  <div class="grid">
+    <article class="card big" data-c="web">
+      <span class="tag mono">FEATURED · FULL-STACK</span><h3><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>VidyaOS — Campus Operating System</h3>
+      <p>Institutional attendance and campus management platform with role-based access (Admin, HOD, Class and Subject Teachers, Students), official attendance registers, daily sessions, defaulter tracking and department-wide analytics.</p>
+      <div class="chips"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MySQL / SQLite</span><span class="chip">Vanilla JS</span><span class="chip">Docker</span><span class="chip">Vercel + Render</span></div>
+      <div class="lk"><a href="https://vidyaos-pink.vercel.app/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/onebotyt/VidyaOS" target="_blank" rel="noopener">Frontend</a><a href="https://github.com/onebotyt/VidyaOS_BackEnd" target="_blank" rel="noopener">Backend</a><a href="https://github.com/onebotyt/Vidya" target="_blank" rel="noopener">Monorepo</a></div>
+    </article>
+    <article class="card" data-c="iot app">
+      <span class="tag mono">IOT · ROBOTICS</span><h3><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14v-5l-2-5H7l-2 5z"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/></svg>NovaX V2 — Robot Car</h3>
+      <p>Remote and autonomous robot car: ESP32 firmware, WebSocket (RFC 6455) real-time control, motor-safety watchdog, OTA updates, obstacle avoidance and a Capacitor Android cockpit app.</p>
+      <div class="chips"><span class="chip">ESP32</span><span class="chip">WebSocket</span><span class="chip">Capacitor</span><span class="chip">JS</span></div>
+      <div class="lk"><a href="https://onebotyt.github.io/robocar/" target="_blank" rel="noopener">Web cockpit</a><a href="https://github.com/onebotyt/robocar" target="_blank" rel="noopener">Code</a><a href="https://github.com/onebotyt/robocar/raw/main/apk/NovaX-Controller.apk">APK</a></div>
+    </article>
+    <article class="card" data-c="app">
+      <span class="tag mono">CROSS-PLATFORM APP</span><h3><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-15-6.7L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 15 6.7L21 16"/><path d="M16 16h5v5"/></svg>SyncTask</h3>
+      <p>Local-first task manager for Windows and Android with direct device-to-device LAN sync, a floating panel and clipboard sharing. No cloud, no mandatory accounts, 39 passing tests and in-app updates.</p>
+      <div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">SQLite</span><span class="chip">LAN sync</span></div>
+      <div class="lk"><a href="https://github.com/onebotyt/Smart-To-Do/releases/latest" target="_blank" rel="noopener">Download</a><a href="https://github.com/onebotyt/Smart-To-Do" target="_blank" rel="noopener">Code</a></div>
+    </article>
+    <article class="card" data-c="iot web">
+      <span class="tag mono">IOT · MAIN ACADEMIC PROJECT</span><h3><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg>Smart Classroom Switchboard</h3>
+      <p>ESP32 automation with PIR presence detection, touch sensors and 8 relays, controlled from a glass-morphism dashboard over the Blynk API with smart modes, schedules and timers.</p>
+      <div class="chips"><span class="chip">ESP32</span><span class="chip">Blynk</span><span class="chip">HTML/CSS/JS</span></div>
+      <div class="lk"><a href="https://onebotyt.github.io/Smart-switch-board-/" target="_blank" rel="noopener">Live UI</a><a href="https://github.com/onebotyt/Smart-switch-board-" target="_blank" rel="noopener">Code</a><a href="https://youtu.be/AFeXMyddqB8" target="_blank" rel="noopener">Demo video</a></div>
+    </article>
+    <article class="card" data-c="ai">
+      <span class="tag mono">ML · RISE INTERNSHIP</span><h3><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Employee Attrition Predictor</h3>
+      <p>HR analytics dashboard that predicts attrition risk from an employee dataset with custom ML models and a Streamlit front end.</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">NumPy</span><span class="chip">Streamlit</span></div>
+      <div class="lk"><a href="https://employee-attrition-ml-hswubfms4tdnfxhz7wbmn9.streamlit.app/" target="_blank" rel="noopener">Live app</a><a href="https://github.com/onebotyt/employee-attrition-ml" target="_blank" rel="noopener">Code</a></div>
+    </article>
+    <article class="card" data-c="web">
+      <span class="tag mono">ACADEMIC · PRIVATE</span><h3><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg>College Website CMS</h3>
+      <p>PHP/MySQL CMS for my college with an admin panel, notice board and events management. Source is private.</p>
+      <div class="chips"><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">Bootstrap 5</span></div>
+    </article>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap rv">
+  <p class="eyebrow mono">// experience</p><h2>Training &amp; internships.</h2>
+  <div class="tl">
+    <div><small class="mono">2026 · Tamizhan Skills · RISE Program</small><h3>Machine Learning &amp; AI Intern</h3><p>Built the employee attrition prediction system end to end, from dataset to deployed Streamlit dashboard.</p></div>
+    <div><small class="mono">Mar 2026 · Tamizhan Skills · RISE Program</small><h3>Web Development Intern</h3><p>Completed web development training in a professional remote environment, focused on responsive front-end work and real-world workflows.</p></div>
+    <div><small class="mono">Academic</small><h3>Smart Classroom · College CMS</h3><p>Main academic projects at Government Polytechnic Nainital, covering IoT automation and a database-driven website.</p></div>
+    <div><small class="mono">Certifications</small><h3>Udemy &amp; SLOG Solutions</h3><p>HTML &amp; CSS, Computer Networks (Udemy) and AI in Engineering (SLOG Solutions).</p></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap rv">
+  <p class="eyebrow mono">// skills</p><h2>What I work with.</h2>
+  <div class="skills">
+    <div class="card"><h3>Web &amp; Backend</h3><div class="chips"><span class="chip">HTML/CSS</span><span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">MySQL</span><span class="chip">Bootstrap</span></div></div>
+    <div class="card"><h3>Apps &amp; AI</h3><div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Python</span><span class="chip">ML basics</span><span class="chip">AI prompting</span></div></div>
+    <div class="card"><h3>IoT &amp; Hardware</h3><div class="chips"><span class="chip">ESP32</span><span class="chip">ESP8266</span><span class="chip">Blynk</span><span class="chip">Sensors</span><span class="chip">Relays</span><span class="chip">Soldering</span></div></div>
+    <div class="card"><h3>Tools &amp; Foundations</h3><div class="chips"><span class="chip">Git/GitHub</span><span class="chip">Docker</span><span class="chip">VS Code</span><span class="chip">C / C++</span><span class="chip">Networking</span><span class="chip">Figma (basic)</span></div></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap rv">
+  <p class="eyebrow mono">// looking for</p><h2>What I’m looking for.</h2>
+  <div class="work">
+    <div class="card"><span class="ico"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><h3>Roles</h3><p>IT, software, web, IoT or ML internship. Full-stack, embedded and app roles all fit.</p></div>
+    <div class="card"><span class="ico"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><h3>Availability</h3><p>Immediate joiner, ready to start as soon as the right team is. On-site or remote.</p></div>
+    <div class="card"><span class="ico"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span><h3>What I bring</h3><p>Shipped projects with live demos, fast learning, clear system planning and effective use of AI tools.</p></div>
+    <div class="card"><span class="ico"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><h3>Reach me</h3><p>The fastest way is email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gdhami115@gmail.com&su=Opportunity%20for%20Girdhar&body=Hi%20Girdhar%2C%0A%0A" target="_blank" rel="noopener" style="border-bottom:2px solid var(--ac)">Open for work</a></p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap rv"><div class="cta">
+  <p class="eyebrow mono">// contact</p><h2>Let’s build something.</h2>
+  <p class="lead">I’m looking for an IT internship and can join immediately. Tap Open for work to write to me on Gmail.</p>
+  <div class="btns"><a class="btn p" href="https://mail.google.com/mail/?view=cm&fs=1&to=gdhami115@gmail.com&su=Opportunity%20for%20Girdhar&body=Hi%20Girdhar%2C%0A%0A" target="_blank" rel="noopener">Open for work</a><a class="btn" href="https://linkedin.com/in/Girdhar-dhami-8869672b7" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/onebotyt" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://youtube.com/@onebotyt1" target="_blank" rel="noopener">YouTube</a><a class="btn" href="https://instagram.com/onebot_yt" target="_blank" rel="noopener">Instagram</a></div>
+</div></div></section>
+<footer>© 2026 Girdhar Dhami · Built with AI + curiosity</footer>
+
+<script>
+const r=document.documentElement,s=(()=>{try{return localStorage.getItem('th')}catch(e){}})();
+if(s)r.dataset.theme=s;
+document.getElementById('t').onclick=()=>{const n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('th',n)}catch(e){}};
+document.querySelectorAll('.f').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.f').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('.card[data-c]').forEach(c=>c.classList.toggle('hide',b.dataset.f!=='all'&&!c.dataset.c.split(' ').includes(b.dataset.f)));
+});
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.08});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+
+const bar=document.getElementById('bar');
+addEventListener('scroll',()=>{bar.style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+const roles=['IoT hardware.','full-stack web apps.','Flutter apps.','ML dashboards.','real systems.'],re=document.getElementById('role');
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){re.textContent=roles[4]}else{let i=0,j=0,d=0;(function t(){const w=roles[i];re.textContent=w.slice(0,j);if(!d&&j++===w.length){d=1;return setTimeout(t,1400)}if(d&&--j===0){d=0;i=(i+1)%roles.length}setTimeout(t,d?35:70)})()}
+const co=new IntersectionObserver(e=>e.forEach(x=>{if(!x.isIntersecting)return;co.unobserve(x.target);const n=+x.target.dataset.n;let c=0;const k=setInterval(()=>{x.target.textContent=++c;if(c>=n)clearInterval(k)},120)}));
+document.querySelectorAll('[data-n]').forEach(e=>co.observe(e));
+</script>
+</body>
+</html>
